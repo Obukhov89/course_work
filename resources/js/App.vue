@@ -1,10 +1,13 @@
 <template>
-<h1>Я корневой компонент моей курсовой работы</h1>
+    <Header/>
+    <router-view/>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 export default {
-    name: "App"
+    name: "App",
+    components: {Header}
 }
 </script>
 
