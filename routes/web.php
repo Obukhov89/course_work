@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\DisciplineController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::get('/', function () {
 Route::post('/login', [UserController::class, 'login']);
 
 Route::get('/getGroups', [GroupController::class, 'getAllGroups']);
+Route::post('/getDiscipline', [DisciplineController::class, 'get_discipline']);
